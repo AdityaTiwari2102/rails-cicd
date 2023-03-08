@@ -1,4 +1,4 @@
 class Post < ApplicationRecord
-  validates_presence_of :title
+  validates :title, presence: true
   has_rich_text :content
 end
