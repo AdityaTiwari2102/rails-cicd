@@ -33,4 +33,4 @@ en:
   hello: "Hello world"
 
   post:
-    success: 'Post was successfully %{action}ed.'
+    success: 'Post was successfully %{action}.'
