@@ -20,7 +20,6 @@ class PostsController < ApplicationController
   end
 
   # POST /posts or /posts.json
-  # rubocop: disable Metrics/AbcSize
   def create
     @post = Post.new(post_params)
 
