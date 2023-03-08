@@ -2,8 +2,8 @@
 
 one:
   title: MyString
-  content: MyText
+  content: <p>In a <i>million</i> stars!</p>
 
 two:
   title: MyString
-  content: MyText
+  content: <p>In 2 <i>million</i> stars!</p>
