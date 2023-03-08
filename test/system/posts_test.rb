@@ -22,6 +22,17 @@ class PostsTest < ApplicationSystemTestCase
     click_on "Back"
   end
 
+  test "should validate title presence on create post" do
+    visit posts_url
+    click_on "New post"
+
+    fill_in_rich_text_area "Content", with: @post.content
+    click_on "Create Post"
+
+    assert_text "Title can't be blank"
+    click_on "Back"
+  end
+
   test "should update Post" do
     visit post_url(@post)
     click_on "Edit this post", match: :first
@@ -31,6 +42,18 @@ class PostsTest < ApplicationSystemTestCase
     click_on "Update Post"
 
     assert_text "Post was successfully updated"
+    click_on "Back"
+  end
+
+  test "should validate title presence on update post" do
+    visit posts_url
+    click_on "Edit this post", match: :first
+
+    fill_in_rich_text_area "Content", with: @post.content
+    fill_in "Title", with: nil
+    click_on "Update Post"
+
+    assert_text "Title can't be blank"
     click_on "Back"
   end
 
