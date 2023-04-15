@@ -8,7 +8,7 @@ jobs:
       - name: Checkout Commit
         uses: actions/checkout@v3
       - name: Install Ruby
-        uses: ruby/setup-ruby@v1
+        uses: ruby/setup-ruby@v3
         with:
           bundler-cache: true
   test:
@@ -35,7 +35,7 @@ jobs:
       - name: Checkout Commit
         uses: actions/checkout@v3
       - name: Install Ruby
-        uses: ruby/setup-ruby@v1
+        uses: ruby/setup-ruby@v3
         with:
           bundler-cache: true
       - name: Install system dependencies

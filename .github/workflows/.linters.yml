@@ -10,7 +10,7 @@ jobs:
       fail-fast: false
     steps:
       - uses: actions/checkout@v3
-      - uses: ruby/setup-ruby@v1
+      - uses: ruby/setup-ruby@v3
         with:
           bundler-cache: true
       - name: rubocop
