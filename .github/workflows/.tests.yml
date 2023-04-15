@@ -12,9 +12,10 @@ jobs:
     steps:
       - name: Checkout Commit
         uses: actions/checkout@v3
-      - name: Install Ruby
+      - name: Install Ruby ${{ matrix.ruby }}
         uses: ruby/setup-ruby@v3
         with:
+          ruby-version: ${{ matrix.ruby }}
           bundler-cache: true
   test:
     strategy:
@@ -44,9 +45,10 @@ jobs:
     steps:
       - name: Checkout Commit
         uses: actions/checkout@v3
-      - name: Install Ruby
+      - name: Install Ruby ${{ matrix.ruby }}
         uses: ruby/setup-ruby@v3
         with:
+          ruby-version: ${{ matrix.ruby }}
           bundler-cache: true
       - name: Install system dependencies
         run: |
