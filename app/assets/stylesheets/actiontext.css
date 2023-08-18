@@ -29,3 +29,36 @@
   padding: 0 !important;
   max-width: 100% !important;
 }
+
+.trix-content pre, trix-editor pre {
+  box-shadow: 0 0 8px #EEE;
+  border-radius: 0.25rem;
+  font-size: 1em;
+}
+
+trix-editor pre {
+  padding: 0.5em;
+  background: #EEE;
+}
+
+.trix-content a, trix-editor a {
+  color: #0366d6;
+}
+
+.trix-content action-text-attachment .attachment {
+  display: flex;
+  max-width: max-content !important;
+  flex-direction: column;
+}
+
+.trix-content h1, trix-editor h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+trix-editor blockquote {
+  border: 0 solid #ccc;
+  border-left-width: 0.3em;
+  margin-left: 0.3em;
+  padding-left: 0.6em;
+}
