@@ -30,12 +30,18 @@
   max-width: 100% !important;
 }
 
-.trix-content pre {
-  border-radius: 4px;
+.trix-content pre, trix-editor pre {
+  box-shadow: 0 0 8px #EEE;
+  border-radius: 0.25rem;
   font-size: 1em;
 }
 
-.trix-content a {
+trix-editor pre {
+  padding: 0.5em;
+  background: #EEE;
+}
+
+.trix-content a, trix-editor a {
   color: #0366d6;
 }
 
