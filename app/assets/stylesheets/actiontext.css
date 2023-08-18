@@ -50,3 +50,9 @@ trix-editor pre {
   max-width: max-content !important;
   flex-direction: column;
 }
+
+.trix-content h1, trix-editor h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
