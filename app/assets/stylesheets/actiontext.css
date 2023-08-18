@@ -31,6 +31,10 @@
 }
 
 
+.trix-content a {
+  color: #0366d6;
+}
+
 .trix-content action-text-attachment .attachment {
   display: flex;
   max-width: max-content !important;
