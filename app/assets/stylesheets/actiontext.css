@@ -56,3 +56,9 @@ trix-editor pre {
   font-weight: bold;
 }
 
+trix-editor blockquote {
+  border: 0 solid #ccc;
+  border-left-width: 0.3em;
+  margin-left: 0.3em;
+  padding-left: 0.6em;
+}
