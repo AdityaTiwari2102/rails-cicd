@@ -27,7 +27,7 @@
 
 .trix-content action-text-attachment .attachment {
   padding: 0 !important;
-  max-width: 100% !important;
+}
 }
 
 .trix-content pre, trix-editor pre {
@@ -48,7 +48,6 @@ trix-editor pre {
 
 .trix-content action-text-attachment .attachment {
   display: flex;
-  max-width: max-content !important;
   flex-direction: column;
 }
 
