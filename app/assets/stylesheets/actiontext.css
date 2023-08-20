@@ -28,6 +28,22 @@
 .trix-content action-text-attachment .attachment {
   padding: 0 !important;
 }
+
+.trix-content action-text-attachment .attachment, trix-editor .attachment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+trix-editor .attachment--preview .attachment__caption {
+  color: #666;
+  font-size: 0.9em;
+  line-height: 1.2;
+  margin: 0.5em 0;
+}
+
+.trix-content .attachment--preview .attachment__caption {
+  margin: 0.5em 0;
 }
 
 .trix-content pre, trix-editor pre {
@@ -44,11 +60,6 @@ trix-editor pre {
 
 .trix-content a, trix-editor a {
   color: #0366d6;
-}
-
-.trix-content action-text-attachment .attachment {
-  display: flex;
-  flex-direction: column;
 }
 
 .trix-content h1, trix-editor h1 {
