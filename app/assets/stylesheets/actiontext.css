@@ -70,3 +70,7 @@ trix-editor ol, trix-editor ul {
 .trix-content ol, .trix-content ul {
   padding-left: 1em;
 }
+
+trix-editor img, .trix-content img {
+  max-width: 15.625em;
+}
