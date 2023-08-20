@@ -27,13 +27,30 @@
 
 .trix-content action-text-attachment .attachment {
   padding: 0 !important;
-  max-width: 100% !important;
+}
+
+.trix-content action-text-attachment .attachment, trix-editor .attachment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+trix-editor .attachment--preview .attachment__caption {
+  color: #666;
+  font-size: 0.9em;
+  line-height: 1.2;
+  margin: 0.5em 0;
+}
+
+.trix-content .attachment--preview .attachment__caption {
+  margin: 0.5em 0;
 }
 
 .trix-content pre, trix-editor pre {
   box-shadow: 0 0 8px #EEE;
   border-radius: 0.25rem;
   font-size: 1em;
+  text-wrap: wrap;
 }
 
 trix-editor pre {
@@ -43,12 +60,6 @@ trix-editor pre {
 
 .trix-content a, trix-editor a {
   color: #0366d6;
-}
-
-.trix-content action-text-attachment .attachment {
-  display: flex;
-  max-width: max-content !important;
-  flex-direction: column;
 }
 
 .trix-content h1, trix-editor h1 {
@@ -61,4 +72,16 @@ trix-editor blockquote {
   border-left-width: 0.3em;
   margin-left: 0.3em;
   padding-left: 0.6em;
+}
+
+trix-editor ol, trix-editor ul {
+  padding: revert !important;
+}
+
+.trix-content ol, .trix-content ul {
+  padding-left: 1em;
+}
+
+trix-editor img, .trix-content img {
+  max-width: 15.625em;
 }
