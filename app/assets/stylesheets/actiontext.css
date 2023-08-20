@@ -62,3 +62,11 @@ trix-editor blockquote {
   margin-left: 0.3em;
   padding-left: 0.6em;
 }
+
+trix-editor ol, trix-editor ul {
+  padding: revert !important;
+}
+
+.trix-content ol, .trix-content ul {
+  padding-left: 1em;
+}
